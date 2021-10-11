@@ -1,0 +1,16 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.nav-img{
+    height: 60px;
+}
+
+.main-news{
+    display: grid;
+    
+}
