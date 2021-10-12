@@ -2,12 +2,19 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+*::selection{
+    background-color: #1becc2;
+}
+
 body{
     background-color: white;
+    overflow-x:hidden;
 }
 
 .nav-img{
-    height: 60px;
+    height: 70px;
+    background-color: white;
+    padding: 0px 10px;
 }
 
 .main-news{
@@ -64,4 +71,31 @@ body{
 
 .news-legend:hover{
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.footer{
+    margin-bottom: 15px;
+    background-color: #11B695;
+    color: white;
+    padding: 0px 15px;
+}
+
+.fot1 img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+.fot1{
+    text-align: left;
+}
+
+.fot2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fot2 h4 a{
+    text-decoration: none;
+    color: white;
 }
