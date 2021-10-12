@@ -102,7 +102,7 @@ body{
 }
 
 /* MODAL cadaslogin*/
-#cadastroModal .modal-title, #loginModal .modal-title{
+#cadastroModal .modal-title, #loginModal .modal-title, #privacityModal .modal-title{
     color: #11B695;
     font-weight: bold;
 }
