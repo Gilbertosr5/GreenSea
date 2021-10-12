@@ -111,7 +111,50 @@ body{
 
 .jumbotron{
     margin-top: 10px;
+    margin-bottom: 20px;
     background-color: rgba(211, 211, 211, 0.329);
     padding: 20px;
     border-radius: 20px;
+}
+
+/* CONTATO */
+.formulario{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.formulario h2{
+    text-align: center;
+    font-weight: bold;
+    color: #11B695;
+    text-shadow: rgba(0, 0, 0, 0.6);
+}
+
+.formulario form{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas: 
+    "ctt-nome ctt-mensagem"
+    "ctt-email ctt-mensagem"
+    "ctt-telefone ctt-mensagem";
+
+    margin-bottom: 10px;
+}
+
+.ctt-nome{
+    grid-area: ctt-nome;
+}
+
+.ctt-email{
+    grid-area: ctt-email;
+}
+
+.ctt-telefone{
+    grid-area: ctt-telefone;
+}
+
+.ctt-mensagem{
+    grid-area: ctt-mensagem;
 }
