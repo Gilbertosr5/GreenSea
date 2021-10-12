@@ -3,7 +3,7 @@
 }
 
 *::selection{
-    background-color: #1becc2;
+    background-color: #b2ebdf;
 }
 
 body{
@@ -98,4 +98,20 @@ body{
 .fot2 h4 a{
     text-decoration: none;
     color: white;
+}
+
+/* QUEM SOMOS Page*/
+.main-sobre h2{
+    text-align: center;
+    font-weight: bold;
+    color: #11B695;
+    text-shadow: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+}
+
+.jumbotron{
+    margin-top: 10px;
+    background-color: rgba(211, 211, 211, 0.329);
+    padding: 20px;
+    border-radius: 20px;
 }
