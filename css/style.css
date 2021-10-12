@@ -32,6 +32,7 @@ body{
 
 .news1{
     background-image: url(../img/home/icon1.png);
+    background-size: cover;
     grid-area: news1;
 }
 
@@ -98,6 +99,12 @@ body{
 .fot2 h4 a{
     text-decoration: none;
     color: white;
+}
+
+/* MODAL cadaslogin*/
+#cadastroModal .modal-title, #loginModal .modal-title{
+    color: #11B695;
+    font-weight: bold;
 }
 
 /* QUEM SOMOS Page*/
