@@ -38,13 +38,13 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Serviços
+                              Serviços
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">None</a></li>
-                                <li><a class="dropdown-item" href="#">None</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">None</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -59,10 +59,31 @@
             </div>
         </nav>
 
-        <main class="main-news">
-            
-        </main>
+        <div class="container">
+            <main class="main-news">
+                <div class="news news1" onmouseenter="show(1)" onmouseleave="hide(1)">
+                    <div class="news-legend">
+                        <h3>Nome da Notícia</h3>
+                        <p class="p1 hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur maxime voluptatibus doloremque commodi architecto non.</p>
+                    </div>
+                </div>
+                <div class="news news2" onmouseenter="show(2)" onmouseleave="hide(2)">
+                    <div class="news-legend">
+                        <h3>Nome da Notícia</h3>
+                        <p class="p2 hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur maxime voluptatibus doloremque commodi architecto non.</p>
+                    </div>
+                </div>
+                <div class="news news3" onmouseenter="show(3)" onmouseleave="hide(3)">
+                    <div class="news-legend">
+                        <h3>Nome da Notícia</h3>
+                        <p class="p3 hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur maxime voluptatibus doloremque commodi architecto non.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
         
+        <script src="js/script.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     </body>

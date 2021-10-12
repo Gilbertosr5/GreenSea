@@ -1,1 +1,2 @@
 ## GreenSea
+O presente site tem como objetivo conscientizar a população sobre o descarte indevido de lixo nas praias da cidade de Caraguatatuba,SP. Através de notícias e divulgação de projetos relacionados a preservação do meio ambiente e denúncias sobre o descarte indevido de lixo na região. O projeto tem como organizadores um grupo de estudantes do Instituto Federal de São Paulo e conta com a orientação de um professor da área.
