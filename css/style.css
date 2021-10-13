@@ -112,7 +112,7 @@ body{
     text-align: center;
     font-weight: bold;
     color: #11B695;
-    text-shadow: rgba(0, 0, 0, 0.6);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
 }
 
@@ -122,6 +122,51 @@ body{
     background-color: rgba(211, 211, 211, 0.329);
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.people{
+    display: grid;
+    grid-gap: 10px;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img text text"
+    "img none insta";
+}
+
+.people img{
+    height: 250px;
+    grid-area: img;
+}
+
+.people p{
+    grid-area: text;
+}
+
+.people a{
+    grid-area: insta;
+    text-align: right;
+}
+
+.people2, .people4{
+    grid-template-areas: 
+    "text text img"
+    "insta none img";
+}
+
+.people2 img, .people4 img{
+    margin-left: auto;
+}
+
+.people2 a, .people4 a{
+    text-align: left;
 }
 
 /* CONTATO */
@@ -134,7 +179,7 @@ body{
     text-align: center;
     font-weight: bold;
     color: #11B695;
-    text-shadow: rgba(0, 0, 0, 0.6);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .formulario form{
