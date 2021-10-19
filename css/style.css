@@ -154,6 +154,41 @@ body{
     color: white;
 }
 
+.footer-mini{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #11B695;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+
+.fot-mini1 img{
+    background-color: whitesmoke;
+}
+
+.fot-mini1 span{
+    text-align: center;
+    font-weight: 400;
+}
+
+.social-mini{
+    text-align: center;
+    padding: 10px;
+}
+
+.social-mini a{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.fot-mini2{
+    padding: 10px;
+}
+
 /* MODAL cadaslogin*/
 #cadastroModal .modal-title, #loginModal .modal-title, #privacityModal .modal-title{
     color: #11B695;
