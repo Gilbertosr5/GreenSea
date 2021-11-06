@@ -21,7 +21,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="notice-body" onload="noticeLoad(); windowScreen()">
         <!--NavBar-->
         <nav class="navbar navbar-expand-lg navbar-dark py-0 my-3" style="background-color: #11B695;">
             <div class="container">
@@ -38,7 +38,7 @@
                             <a class="nav-link" href="../quemsomos.html">Quem Somos?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../servicos.html">Serviços</a>
+                            <a class="nav-link" href="../servicos.html">Serviços</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mr-3" href="../contato.html">Contato</a>
@@ -54,24 +54,21 @@
         </nav>
 
         <div class="container notice">
-            <div class="notice-img text-center">
-                <img src="../../img/notices/notice-page-img.png" alt="notice-page-img">
-            </div>
-            <div class="notice-title">
-                <h2>Titulo</h2>
-                <h3>Manchete</h3>
+            <div class="notice-header">
+                <h3 id="notice-title">Titulo</h3>
+                <hr>
+                <h2 id="notice-manchete">Manchete</h2>
             </div>
             <div class="notice-area">
-                <p class="notice-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim voluptates, qui molestiae pariatur, illum corrupti quae quidem officia, exercitationem repudiandae placeat nam quas veniam beatae voluptatem praesentium fuga deserunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt eius quo neque numquam, saepe, in nobis facere illo tempora atque, optio consequuntur voluptatibus qui minima hic inventore! Minima, libero tempora?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eveniet neque eum rem nulla voluptas dignissimos voluptatem facere voluptatum earum reprehenderit adipisci, quae saepe asperiores, sunt recusandae commodi, culpa dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consectetur modi! Soluta asperiores ipsam officiis nihil repellat quod blanditiis pariatur quia earum. Aliquid ducimus odit rem quibusdam eum consequuntur tempore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nulla quas ipsam consequuntur odit velit unde voluptatem. Modi iure numquam nesciunt dolorem ducimus recusandae esse quam nemo? Maxime, ratione ipsam. lorem
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis quibusdam, sapiente aliquam dolorum dolore est hic qui atque nihil facere ea et doloremque ab, repudiandae, soluta similique numquam dolores.
-                </p>
+                <div class="notice-text-area">
+                    <p id="notice-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim voluptates, qui molestiae pariatur, illum corrupti quae quidem officia, exercitationem repudiandae placeat nam quas veniam beatae voluptatem praesentium fuga deserunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt eius quo neque numquam, saepe, in nobis facere illo tempora atque, optio consequuntur voluptatibus qui minima hic inventore! Minima, libero tempora?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eveniet neque eum rem nulla voluptas dignissimos voluptatem facere voluptatum earum reprehenderit adipisci, quae saepe asperiores, sunt recusandae commodi, culpa dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consectetur modi! Soluta asperiores ipsam officiis nihil repellat quod blanditiis pariatur quia earum. Aliquid ducimus odit rem quibusdam eum consequuntur tempore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nulla quas ipsam consequuntur odit velit unde voluptatem. Modi iure numquam nesciunt dolorem ducimus recusandae esse quam nemo? Maxime, ratione ipsam. lorem
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis quibusdam, sapiente aliquam dolorum dolore est hic qui atque nihil facere ea et doloremque ab, repudiandae, soluta similique numquam dolores.
+                    </p>
+                </div>
             </div>
         </div>
-        <p class="notice-text footer-fix">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim voluptates, qui molestiae pariatur, illum corrupti quae quidem officia, exercitationem repudiandae placeat nam quas veniam beatae voluptatem praesentium fuga deserunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt eius quo neque numquam, saepe, in nobis facere illo tempora atque, optio consequuntur voluptatibus qui minima hic inventore! Minima, libero tempora?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eveniet neque eum rem nulla voluptas dignissimos voluptatem facere voluptatum earum reprehenderit adipisci, quae saepe asperiores, sunt recusandae commodi, culpa dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consectetur modi! Soluta asperiores ipsam officiis nihil repellat quod blanditiis pariatur quia earum. Aliquid ducimus odit rem quibusdam eum consequuntur tempore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nulla quas ipsam consequuntur odit velit unde voluptatem. Modi iure numquam nesciunt dolorem ducimus recusandae esse quam nemo? Maxime, ratione ipsam. lorem
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis quibusdam, sapiente aliquam dolorum dolore est hic qui atque nihil facere ea et doloremque ab, repudiandae, soluta similique numquam dolores.
-        </p>
         <!--Footer-->
-        <footer class="footer" id="notice-footer" style="width: 100%;">
+        <footer class="footer mt-5" id="notice-footer" style="width: 100%;">
             <div class="row">
                 <div class="col fot1">
                     <img src="../../img/brands/GreenSea-short.png" alt="Green Sea Brand">
@@ -89,6 +86,21 @@
             </div>
         </footer>
 
+        <footer class="footer-mini mt-4">
+            <div class="row fot-mini1">
+                <img src="../../img/brands/GreenSea-extendend-mini.png" alt="Green Sea Brand">
+                <span>copyright &copy; 2021</span>
+            </div>
+            <div class="row fot-mini2">
+                <button type="button" style="background-color: #3fdabb;" class="btn text-light" data-bs-toggle="modal" data-bs-target="#privacityModal">Política de Privacidade</button>
+                <div class="social-mini">
+                    <a href="https://www.instagram.com/greenseaifsp/" target="_blank"><i class="fab fa-instagram"></i></a> 
+                    <a href="https://www.facebook.com/greenseaifsp/" target="_blank"><i class="fab fa-facebook"></i></a> 
+                    <a href="https://www.youtube.com/channel/UCcN9kaBdwJANUcpucGozQrg" target="_blank"><i class="fab fa-youtube"></i></a> 
+                    <a href="https://twitter.com/GreenSeaIFSP" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
         <!--Politica de privacidade-->
         <div class="modal fade" tabindex="-1" id="privacityModal">
             <div class="modal-dialog modal-dialog-scrollable">
