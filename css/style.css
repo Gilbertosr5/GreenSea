@@ -213,6 +213,10 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
+.jumbotron p{
+    text-align: justify;
+}
+
 .people{
     display: grid;
     grid-gap: 10px;
@@ -236,11 +240,13 @@ body{
 
 .people p{
     grid-area: text;
+    text-align: justify;
 }
 
 .people a{
     grid-area: insta;
     text-align: right;
+    text-decoration: none;
 }
 
 .people2, .people4{
